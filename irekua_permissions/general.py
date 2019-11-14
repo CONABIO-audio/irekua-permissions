@@ -18,7 +18,7 @@ def is_developer(user, **kwargs):
     return user.is_developer
 
 
-def is_curator(user, **kwargs)
+def is_curator(user, **kwargs):
     return user.is_curator
 
 
