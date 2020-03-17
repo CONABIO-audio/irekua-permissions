@@ -45,3 +45,23 @@ def delete(user, collection=None, **kwargs):
         return True
 
     return collection.collection_type.is_admin(user)
+
+
+def add_admin(user, collection=None, **kwargs):
+    if not user.is_authenticated:
+        return False
+
+    if user.is_superuser:
+        return True
+
+    return collection.collection_type.is_admin(user)
+
+
+def delete_admin(user, collection=None, **kwargs):
+    if not user.is_authenticated:
+        return False
+
+    if user.is_superuser:
+        return True
+
+    return collection.collection_type.is_admin(user)
