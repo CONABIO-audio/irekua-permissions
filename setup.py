@@ -21,6 +21,7 @@ setup(
     license='BSD License',
     description='Permissions for Irekua',
     long_description=README,
+    install_requires=['irekua-database'],
     url='https://github.com/CONABIO-audio/irekua-permissions',
     author='CONABIO, Gustavo Everardo Robredo Esquivelzeta, Santiago Martínez Balvanera',
     author_email='erobredo@conabio.gob.mx, smartinez@conabio.gob.mx',
